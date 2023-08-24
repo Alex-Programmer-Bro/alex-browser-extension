@@ -1,4 +1,5 @@
 import reloadOnUpdate from "virtual:reload-on-update-in-background-script";
+import { contextMenuAction } from "../type";
 
 reloadOnUpdate("pages/background");
 
@@ -8,4 +9,25 @@ reloadOnUpdate("pages/background");
  */
 reloadOnUpdate("pages/content/style.scss");
 
-console.log("background loaded");
+chrome.contextMenus.create(
+  {
+    id: contextMenuAction.debugger,
+    title: "debugger",
+  },
+  () => {
+    console.log("[ready] upload snippets");
+  }
+);
+
+chrome.contextMenus.onClicked.addListener((e) => {
+  console.log(e);
+
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    const tab = tabs[0];
+    if (tab.id) {
+      chrome.tabs.sendMessage(tab.id, { action: e.menuItemId }, (msg) => {
+        console.log("result message:", msg);
+      });
+    }
+  });
+});
