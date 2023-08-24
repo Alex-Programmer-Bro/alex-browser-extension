@@ -35,7 +35,7 @@ export default function App() {
       sendResponse: (response?: string) => void
     ) => void = (msg, _, sendResponse) => {
       switch (msg.action) {
-        case "DEBUGGER": {
+        case "debugger": {
           setLoading(true);
           loopAction({
             loopFn: () => setIndex((pre) => pre - 1),
@@ -48,6 +48,10 @@ export default function App() {
               });
             },
           });
+          break;
+        }
+        case "contentEditable": {
+          document.documentElement.contentEditable = "true";
           break;
         }
       }
