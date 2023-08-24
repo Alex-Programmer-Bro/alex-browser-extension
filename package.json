@@ -1,6 +1,6 @@
 {
-  "name": "alex-browser-extension",
-  "version": "0.0.1",
+  "name": "alex",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "build": "tsc --noEmit && vite build",
