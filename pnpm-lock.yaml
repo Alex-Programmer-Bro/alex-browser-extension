@@ -89,8 +89,8 @@ devDependencies:
     specifier: 1.62.1
     version: 1.62.1
   ts-loader:
-    specifier: 9.4.2
-    version: 9.4.2(typescript@4.8.3)(webpack@5.88.2)
+    specifier: 9.4.4
+    version: 9.4.4(typescript@4.8.3)(webpack@5.88.2)
   typescript:
     specifier: 4.8.3
     version: 4.8.3
@@ -3230,8 +3230,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-loader@9.4.2(typescript@4.8.3)(webpack@5.88.2):
-    resolution: {integrity: sha512-OmlC4WVmFv5I0PpaxYb+qGeGOdm5giHU7HwDDUjw59emP2UYMHy9fFSDcYgSNoH8sXcj4hGCSEhlDZ9ULeDraA==}
+  /ts-loader@9.4.4(typescript@4.8.3)(webpack@5.88.2):
+    resolution: {integrity: sha512-MLukxDHBl8OJ5Dk3y69IsKVFRA/6MwzEqBgh+OXMPB/OD01KQuWPFd1WAQP8a5PeSCAxfnkhiuWqfmFJzJQt9w==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       typescript: '*'
