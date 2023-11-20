@@ -89,8 +89,8 @@ devDependencies:
     specifier: 1.62.1
     version: 1.62.1
   ts-loader:
-    specifier: 9.4.2
-    version: 9.4.2(typescript@4.8.3)(webpack@5.88.2)
+    specifier: 9.5.1
+    version: 9.5.1(typescript@4.8.3)(webpack@5.88.2)
   typescript:
     specifier: 4.8.3
     version: 4.8.3
@@ -3046,6 +3046,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /source-map@0.7.4:
+    resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==}
+    engines: {node: '>= 8'}
+    dev: true
+
   /sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     deprecated: Please use @jridgewell/sourcemap-codec instead
@@ -3230,8 +3235,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-loader@9.4.2(typescript@4.8.3)(webpack@5.88.2):
-    resolution: {integrity: sha512-OmlC4WVmFv5I0PpaxYb+qGeGOdm5giHU7HwDDUjw59emP2UYMHy9fFSDcYgSNoH8sXcj4hGCSEhlDZ9ULeDraA==}
+  /ts-loader@9.5.1(typescript@4.8.3)(webpack@5.88.2):
+    resolution: {integrity: sha512-rNH3sK9kGZcH9dYzC7CewQm4NtxJTjSEVRJ2DyBZR7f8/wcta+iV44UPCXc5+nzDzivKtlzV6c9P4e+oFhDLYg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       typescript: '*'
@@ -3241,6 +3246,7 @@ packages:
       enhanced-resolve: 5.15.0
       micromatch: 4.0.5
       semver: 7.5.4
+      source-map: 0.7.4
       typescript: 4.8.3
       webpack: 5.88.2
     dev: true
